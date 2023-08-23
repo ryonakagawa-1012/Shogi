@@ -64,7 +64,7 @@ int main() {
     for (i = 1; i <= 2; i++) {
         for (j = 1; j <= 2; j++) {
             HgWCircleFill(0, X_BOARD_SP + 3 * CELL_SIZE * j,
-                          Y_BOARD_SP + 3 * CELL_SIZE * i, 7,
+                          Y_BOARD_SP + 3 * CELL_SIZE * i, 10,
                           1);  // 円を描画
         }
     }

@@ -49,7 +49,7 @@ int main() {
 
     /**********将棋盤の描画**********/
 
-    HgSetWidth(2.0);
+    HgSetWidth(3.0);
 
     for (i = 0; i < 11; i++) {
         HgWLine(0, X_BOARD_SP + i * CELL_SIZE, Y_BOARD_SP,
@@ -59,12 +59,12 @@ int main() {
                 Y_BOARD_SP + i * CELL_SIZE);  // 横線を描画
     }
 
-    HgSetFillColor(HG_BLACK);
+    HgSetColor(HG_BLACK);
 
     for (i = 1; i <= 2; i++) {
         for (j = 1; j <= 2; j++) {
             HgWCircleFill(0, X_BOARD_SP + 3 * CELL_SIZE * j,
-                          Y_BOARD_SP + 3 * CELL_SIZE * i, 7,
+                          Y_BOARD_SP + 3 * CELL_SIZE * i, 10,
                           1);  // 円を描画
         }
     }
