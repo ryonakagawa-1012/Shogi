@@ -21,21 +21,3 @@
 
 #define 王 8
 #define 玉 -8
-
-#define 自と 11
-#define 敵と -11
-
-#define 自成香 12
-#define 敵成香 -12
-
-#define 自成桂 13
-#define 敵成桂 -13
-
-#define 自成銀 14
-#define 敵成銀 -14
-
-#define 自馬 16
-#define 敵馬 -16
-
-#define 自竜 17
-#define 敵竜 -17
