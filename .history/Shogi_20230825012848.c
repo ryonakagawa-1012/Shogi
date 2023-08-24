@@ -10,6 +10,7 @@
 #include <stdio.h>
 
 #include "Shogi_ initialize.c"
+#include "draw_koma.c"
 
 #define WINDOW_MAIN_SIZE 950  // メインウィンドウのサイズ
 

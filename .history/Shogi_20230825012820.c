@@ -9,7 +9,7 @@
 #include <handy.h>
 #include <stdio.h>
 
-#include "Shogi_ initialize.c"
+#include "Shogi_"
 
 #define WINDOW_MAIN_SIZE 950  // メインウィンドウのサイズ
 

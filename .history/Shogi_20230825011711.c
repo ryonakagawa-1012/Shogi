@@ -9,8 +9,6 @@
 #include <handy.h>
 #include <stdio.h>
 
-#include "Shogi_ initialize.c"
-
 #define WINDOW_MAIN_SIZE 950  // メインウィンドウのサイズ
 
 #define CELL_SIZE 100  // 将棋盤の1マスのサイズ
@@ -23,7 +21,7 @@
 
 int turn = 先手;  // 1:先手, -1:後手
 
-int main(void) {
+int main() {
     int i, j;  // カウンタ変数
 
     /**********どんなスクリーンでもウィンドウがスクリーンの真ん中に表示されるようにする**********/

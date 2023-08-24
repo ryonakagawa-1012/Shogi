@@ -9,8 +9,6 @@
 #include <handy.h>
 #include <stdio.h>
 
-#include "Shogi_ initialize.c"
-
 #define WINDOW_MAIN_SIZE 950  // メインウィンドウのサイズ
 
 #define CELL_SIZE 100  // 将棋盤の1マスのサイズ

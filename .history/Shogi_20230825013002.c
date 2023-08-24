@@ -77,14 +77,12 @@ int main(void) {
 
     BoardInitialize();  // 駒の初期値を設定
 
-    /*
-        for (i = 1; i < 10; i++) {
-            for (j = 1; j < 10; j++) {
-                printf("%2d ", board[j][i]);  //デバッグ用
-            }
-            printf("\n");
+    for (i = 1; i < 10; i++) {
+        for (j = 1; j < 10; j++) {
+            printf("%2d ", board[j][i]);  // デバッグ用
         }
-    */
+        printf("\n");
+    }
 
     /**********ここまで**********/
 
