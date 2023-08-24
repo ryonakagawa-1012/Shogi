@@ -18,7 +18,6 @@
 #define 後手 -1
 
 int board[11][11] = {};  // 9*9の将棋盤(外枠を含めると11*11)
-
 #include "Koma.c"
 
 int turn = 先手;  // 1:先手, -1:後手
@@ -77,14 +76,11 @@ int main() {
 
     BoardInitialValue();  // 駒の初期値を設定
 
-    /*
-        for (i = 1; i < 10; i++) {
-            for (j = 1; j < 10; j++) {
-                printf("%2d ", board[j][i]);  //デバッグ用
-            }
-            printf("\n");
+    for (i = 1; i < 10; i++) {
+        for (j = 1; j < 10; j++) {
+            printf("%d ", board[j][i]);
         }
-    */
+    }
 
     /**********ここまで**********/
 

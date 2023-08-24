@@ -60,8 +60,8 @@ void BoardInitialValue() {
     board[4][9] = 自金;
     board[6][9] = 自金;
 
-    board[2][8] = 自角;
-    board[8][8] = 自飛;
+    board[2][7] = 自角;
+    board[8][7] = 自飛;
 
     board[5][9] = 王;
 
