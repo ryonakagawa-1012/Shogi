@@ -18,10 +18,10 @@
 #define X_BOARD_LD 25  // 将棋盤の右下のx座標
 #define Y_BOARD_LD 25  // 将棋盤の右下のy座標
 
-#define X_BOARD_RU 925  // 将棋盤の左上のx座標
-#define Y_BOARD_RU 925  // 将棋盤の左上のy座標
+＃
 
-int main(void) {
+    int
+    main(void) {
     int i, j;  // カウンタ変数
 
     /**********どんなスクリーンでもウィンドウがスクリーンの真ん中に表示されるようにする**********/

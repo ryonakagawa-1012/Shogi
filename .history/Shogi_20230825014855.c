@@ -15,11 +15,10 @@
 
 #define CELL_SIZE 100  // 将棋盤の1マスのサイズ
 
-#define X_BOARD_LD 25  // 将棋盤の右下のx座標
-#define Y_BOARD_LD 25  // 将棋盤の右下のy座標
+#define X_BOARD_SP 25  // 将棋盤のx座標のスタート位置
+#define Y_BOARD_SP 25  // 将棋盤のy座標のスタート位置
 
-#define X_BOARD_RU 925  // 将棋盤の左上のx座標
-#define Y_BOARD_RU 925  // 将棋盤の左上のy座標
+#defi
 
 int main(void) {
     int i, j;  // カウンタ変数
@@ -52,19 +51,19 @@ int main(void) {
     HgSetWidth(2.0);
 
     for (i = 0; i < 11; i++) {
-        HgWLine(0, X_BOARD_LD + i * CELL_SIZE, Y_BOARD_LD,
-                X_BOARD_LD + i * CELL_SIZE,
-                Y_BOARD_LD + 900);  // 縦線を描画
-        HgWLine(0, X_BOARD_LD, Y_BOARD_LD + i * CELL_SIZE, X_BOARD_LD + 900,
-                Y_BOARD_LD + i * CELL_SIZE);  // 横線を描画
+        HgWLine(0, X_BOARD_SP + i * CELL_SIZE, Y_BOARD_SP,
+                X_BOARD_SP + i * CELL_SIZE,
+                Y_BOARD_SP + 900);  // 縦線を描画
+        HgWLine(0, X_BOARD_SP, Y_BOARD_SP + i * CELL_SIZE, X_BOARD_SP + 900,
+                Y_BOARD_SP + i * CELL_SIZE);  // 横線を描画
     }
 
     HgSetFillColor(HG_BLACK);
 
     for (i = 1; i <= 2; i++) {
         for (j = 1; j <= 2; j++) {
-            HgWCircleFill(0, X_BOARD_LD + 3 * CELL_SIZE * j,
-                          Y_BOARD_LD + 3 * CELL_SIZE * i, 7,
+            HgWCircleFill(0, X_BOARD_SP + 3 * CELL_SIZE * j,
+                          Y_BOARD_SP + 3 * CELL_SIZE * i, 7,
                           1);  // 円を描画
         }
     }

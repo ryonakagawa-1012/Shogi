@@ -47,7 +47,6 @@
 #define 敵竜 -17
 
 extern int board[11][11];
-extern int turn;
 
 void BoardInitialize(void);
 

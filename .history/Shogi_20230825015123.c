@@ -15,11 +15,8 @@
 
 #define CELL_SIZE 100  // 将棋盤の1マスのサイズ
 
-#define X_BOARD_LD 25  // 将棋盤の右下のx座標
-#define Y_BOARD_LD 25  // 将棋盤の右下のy座標
-
-#define X_BOARD_RU 925  // 将棋盤の左上のx座標
-#define Y_BOARD_RU 925  // 将棋盤の左上のy座標
+#define X_BOARD_LD 25  // 将棋盤のx座標のスタート位置
+#define Y_BOARD_LD 25  // 将棋盤のy座標のスタート位置
 
 int main(void) {
     int i, j;  // カウンタ変数
