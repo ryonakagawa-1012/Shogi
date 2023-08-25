@@ -61,10 +61,8 @@
 extern int board[11][11];
 extern int turn;
 
-extern int Main_Layer_ID;
-
 void BoardInitialize(void);
 
-void draw_koma(void);
+void draw_koma(int, int);
 
 #endif  // _SHOGI_H_

@@ -61,7 +61,7 @@
 extern int board[11][11];
 extern int turn;
 
-extern int Main_Layer_ID;
+extern int Main_Layer;
 
 void BoardInitialize(void);
 

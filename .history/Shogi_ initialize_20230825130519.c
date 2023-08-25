@@ -2,7 +2,6 @@
 
 int board[11][11] = {};  // 9*9の将棋盤(外枠を含めると11*11)
 int turn = 先手;         // 1:先手, -1:後手
-int Main_Layer_ID;       // メインレイヤーのID
 
 void BoardInitialize(void) {
     int x;

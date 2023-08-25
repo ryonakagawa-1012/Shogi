@@ -46,25 +46,11 @@
 #define 自竜 17
 #define 敵竜 -17
 
-#define WINDOW_MAIN_SIZE 950  // メインウィンドウのサイズ
-
-#define CELL_SIZE 100  // 将棋盤の1マスのサイズ
-
-#define X_BOARD_LD \
-    (WINDOW_MAIN_SIZE - CELL_SIZE * 9) / 2  // 将棋盤の右下のx座標
-#define Y_BOARD_LD \
-    (WINDOW_MAIN_SIZE - CELL_SIZE * 9) / 2  // 将棋盤の右下のy座標
-
-#define X_BOARD_RU (WINDOW_MAIN_SIZE - X_BOARD_LD)  // 将棋盤の左上のx座標
-#define Y_BOARD_RU (WINDOW_MAIN_SIZE - Y_BOARD_LD)  // 将棋盤の左上のy座標
-
 extern int board[11][11];
 extern int turn;
 
-extern int Main_Layer_ID;
-
 void BoardInitialize(void);
 
-void draw_koma(void);
+void draw_koma(int, int, int);
 
 #endif  // _SHOGI_H_

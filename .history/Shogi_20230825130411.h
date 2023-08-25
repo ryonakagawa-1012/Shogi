@@ -61,9 +61,10 @@
 extern int board[11][11];
 extern int turn;
 
-extern int Main_Layer_ID;
+extern int
 
-void BoardInitialize(void);
+    void
+    BoardInitialize(void);
 
 void draw_koma(void);
 

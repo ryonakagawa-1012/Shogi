@@ -41,8 +41,6 @@ int main(void) {
     HgWOpen(x_main_window_size, y_main_window_size, WINDOW_MAIN_SIZE,
             WINDOW_MAIN_SIZE);  // mainウィンドウを作成
 
-    Main_Layer_ID = HgWAddLayer(0);  // メインレイヤーのID
-
     printf("%d\n", Main_Layer_ID);  // デバッグ用
 
     HgWSetTitle(0, "将棋");  // mainウィンドウのタイトルを設定
@@ -93,7 +91,6 @@ int main(void) {
     /**********ゲームのメインループ**********/
 
     for (int TurnNum = 1;; TurnNum++) {
-        draw_koma();  // 駒を描画
     }
 
     /**********ここまで**********/

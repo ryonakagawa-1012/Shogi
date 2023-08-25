@@ -1,12 +1,6 @@
 /*
     将棋
 
-    *MEMO*
-    ベースレイヤー：将棋盤
-    メインレイヤー：駒
-
-
-
     使用した素材：https://putiya.com/html/hobby/syougi_koma01.html
 */
 
@@ -20,7 +14,7 @@
 int main(void) {
     int i, j;  // カウンタ変数
 
-    int xCell, yCell;  // マスの座標
+    int x, y;  // マウスの座標
 
     /**********どんなスクリーンでもウィンドウがスクリーンの真ん中に表示されるようにする**********/
 
@@ -40,10 +34,6 @@ int main(void) {
 
     HgWOpen(x_main_window_size, y_main_window_size, WINDOW_MAIN_SIZE,
             WINDOW_MAIN_SIZE);  // mainウィンドウを作成
-
-    Main_Layer_ID = HgWAddLayer(0);  // メインレイヤーのID
-
-    printf("%d\n", Main_Layer_ID);  // デバッグ用
 
     HgWSetTitle(0, "将棋");  // mainウィンドウのタイトルを設定
 
@@ -93,7 +83,11 @@ int main(void) {
     /**********ゲームのメインループ**********/
 
     for (int TurnNum = 1;; TurnNum++) {
-        draw_koma();  // 駒を描画
+        for (int y = 1; y < 10; y++) {
+            for (int x = 1; x < 10; x++) {
+                draw_koma(x, y);
+            }
+        }
     }
 
     /**********ここまで**********/
