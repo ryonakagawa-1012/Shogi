@@ -6,8 +6,10 @@ void draw_koma(void) {
 
     for (int y = 1; y < 9; y++) {
         Y_Img_Center = Y_BOARD_RU - Y_BOARD_LD - CELL_SIZE * y;
+
         for (int x = 0; x < 9; x++) {
             X_Img_Center = X_BOARD_RU - X_BOARD_LD - CELL_SIZE * x;
+
             if (board[x][y] == 自歩) {
                 int img = HgImageLoad("images/01_歩兵.png");
                 printf("img_ID : %d\n", img);  // デバッグ用

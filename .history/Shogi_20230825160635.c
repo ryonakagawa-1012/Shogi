@@ -93,7 +93,7 @@ int main(void) {
 
     /**********ゲームのメインループ**********/
 
-    for (int TurnNum = 1; TurnNum <= 1; TurnNum++) {
+    for (int TurnNum = 1;; TurnNum++) {
         draw_koma();  // 駒を描画
     }
 
