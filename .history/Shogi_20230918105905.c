@@ -44,6 +44,8 @@ int main(void) {
 
     Main_Layer_ID = HgWAddLayer(0);  // メインレイヤーのID
 
+    // printf("%d\n", Main_Layer_ID);  // デバッグ用
+
     HgWSetTitle(0, "将棋");  // mainウィンドウのタイトルを設定
 
     /**********ここまで**********/

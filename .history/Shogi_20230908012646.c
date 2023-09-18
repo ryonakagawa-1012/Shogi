@@ -44,6 +44,8 @@ int main(void) {
 
     Main_Layer_ID = HgWAddLayer(0);  // メインレイヤーのID
 
+    printf("%d\n", Main_Layer_ID);  // デバッグ用
+
     HgWSetTitle(0, "将棋");  // mainウィンドウのタイトルを設定
 
     /**********ここまで**********/
@@ -91,7 +93,7 @@ int main(void) {
 
     /**********ゲームのメインループ**********/
 
-    for (turn = 1; turn <= 1; turn++) {
+    for (turn = 1;; turn++) {
         draw_koma();  // 駒を描画
     }
 

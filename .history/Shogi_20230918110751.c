@@ -23,10 +23,12 @@ int main(void) {
 
     int xCell, yCell;  // マスの座標
 
-    /**********どんなスクリーンでもウィンドウがスクリーンの真ん中に表示されるようにする**********/
+    printf("")
 
-    double x_screen_size;  // スクリーンの横幅
-    double y_screen_size;  // スクリーンの縦幅
+        /**********どんなスクリーンでもウィンドウがスクリーンの真ん中に表示されるようにする**********/
+
+        double x_screen_size;  // スクリーンの横幅
+    double y_screen_size;      // スクリーンの縦幅
 
     HgScreenSize(&x_screen_size, &y_screen_size);  // スクリーンのサイズを取得
 

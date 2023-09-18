@@ -16,7 +16,7 @@ void draw_koma(void) {
                 HgImageSize(img_ID, &Img_Width, &Img_Height);
 
                 HgWImagePut(Main_Layer_ID, X_Img_Center, Y_Img_Center, img_ID,
-                            0.35, 0);
+                            0.26, 0);
 
                 printf("img_ID : %d\n", img_ID);  // デバッグ用
 

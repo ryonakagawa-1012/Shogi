@@ -23,6 +23,9 @@ int main(void) {
 
     int xCell, yCell;  // マスの座標
 
+    printf("X_BOARD_LD : %d\n", X_BOARD_LD);  // デバッグ用
+    printf("Y_BOARD_LD : %d\n", Y_BOARD_LD);  // デバッグ用
+
     /**********どんなスクリーンでもウィンドウがスクリーンの真ん中に表示されるようにする**********/
 
     double x_screen_size;  // スクリーンの横幅
