@@ -1,8 +1,7 @@
 #include "Shogi.h"
 
 void draw_koma(void) {
-#define IMG_SIZE 0.34  // 駒の画像のサイズ
-
+#define IMG_SIZE 0.35  // 駒の画像のサイズ
     int X_Img_Center, Y_Img_Center;
     double Img_Width, Img_Height;
 
@@ -112,14 +111,14 @@ void draw_koma(void) {
                 HgWImagePut(Main_Layer_ID, X_Img_Center, Y_Img_Center, img_ID,
                             IMG_SIZE, M_PI);
             } else if (board[x][y] == 王) {
-                int img_ID = HgImageLoad("images/08_王.png");
+                int img_ID = HgImageLoad("images/08_王将.png");
 
                 HgImageSize(img_ID, &Img_Width, &Img_Height);
 
                 HgWImagePut(Main_Layer_ID, X_Img_Center, Y_Img_Center, img_ID,
                             IMG_SIZE, 0);
             } else if (board[x][y] == 玉) {
-                int img_ID = HgImageLoad("images/08_玉.png");
+                int img_ID = HgImageLoad("images/08_王将.png");
 
                 HgImageSize(img_ID, &Img_Width, &Img_Height);
 
@@ -211,5 +210,3 @@ void draw_koma(void) {
                             img_ID, IMG_SIZE, M_PI);
             }
         }
-    }
-}

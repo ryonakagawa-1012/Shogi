@@ -2,7 +2,6 @@
 
 void draw_koma(void) {
 #define IMG_SIZE 0.34  // 駒の画像のサイズ
-
     int X_Img_Center, Y_Img_Center;
     double Img_Width, Img_Height;
 

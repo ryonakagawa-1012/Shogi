@@ -13,7 +13,6 @@
 #include "Shogi.h"
 
 #include <handy.h>
-#include <math.h>
 #include <stdio.h>
 
 #include "Shogi_ initialize.c"
