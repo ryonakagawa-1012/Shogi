@@ -19,7 +19,7 @@
 #include "Shogi_ initialize.c"
 #include "draw_koma.c"
 
-int main() {
+int main(void) {
     int i, j;  // カウンタ変数
 
     int xCell, yCell;  // マスの座標

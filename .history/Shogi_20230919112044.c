@@ -19,7 +19,7 @@
 #include "Shogi_ initialize.c"
 #include "draw_koma.c"
 
-int main() {
+int main(void) {
     int i, j;  // カウンタ変数
 
     int xCell, yCell;  // マスの座標
@@ -91,6 +91,8 @@ int main() {
     draw_koma();  // 駒を描画
 
     /**********ここまで**********/
+
+    HgSetEventMask(HG_MOUSE_DOWN);  // キー入力を受け付ける
 
     HgSetEventMask(
         HG_MOUSE_DOWN);  // 標準ウィンドウのマウスクリックを検出するように設定
